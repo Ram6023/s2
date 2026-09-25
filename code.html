@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SIYANTRA | Clinical Botanical Science &amp; Authentic Korean Dermal Formulations</title>
+<!-- Tailwind CSS v3 CDN with forms and container-queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Playfair Display (Editorial Display) & Plus Jakarta Sans / Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            botanical: {
+              DEFAULT: '#16271E',
+              dark: '#0E1A14',
+              surface: '#1F3327',
+              sage: '#4A5D52',
+              muted: '#7A8C81',
+              tint: '#E8EFEA'
+            },
+            champagne: {
+              DEFAULT: '#C5A880',
+              deep: '#A6875E',
+              light: '#F4ECE1',
+              ochre: '#B8976C'
+            },
+            alabaster: {
+              DEFAULT: '#FBF9F5',
+              surface: '#F5F2EB',
+              border: '#EAE6DE',
+              dim: '#DFDBD1'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FBF9F5;
+      color: #1F2421;
+      overflow-x: hidden;
+      letter-spacing: -0.01em;
+    }
+    .font-editorial {
+      font-family: 'Playfair Display', serif;
+    }
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+    details[open] .faq-chevron {
+      transform: rotate(180deg);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 2px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #DFDBD1;
+    }
+  </style>
+</head>
+<body class="bg-alabaster text-stone-800 antialiased selection:bg-champagne-light selection:text-botanical-dark">
+<!-- BEGIN: AnnouncementBar -->
+<div class="bg-botanical text-alabaster text-[11px] font-medium tracking-[0.14em] uppercase py-2.5 px-4 border-b border-botanical-surface select-none" data-purpose="announcement-bar">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-center">
+<div class="flex items-center space-x-6 justify-center w-full md:w-auto">
+<span class="flex items-center gap-2">
+<i class="w-3.5 h-3.5 text-champagne" data-lucide="package-check"></i>
+          Complimentary Express Delivery on orders over £60
+        </span>
+<span class="hidden lg:inline text-stone-600">|</span>
+<span class="hidden lg:flex items-center gap-2">
+<span class="text-champagne font-bold">★ 4.9/5</span> Clinical Skincare Rating (2,400+ Verified Consultations)
+        </span>
+</div>
+<div class="flex items-center space-x-4 text-[10px] text-alabaster/70 tracking-widest">
+<span>Flagship Studios: London Mayfair &amp; Manchester</span>
+<span class="text-stone-600">•</span>
+<a class="text-champagne hover:underline" href="#consultation">Book Dermal Analysis</a>
+</div>
+</div>
+</div>
+<!-- END: AnnouncementBar -->
+<!-- BEGIN: MainHeader -->
+<header class="bg-white/95 backdrop-blur-md border-b border-alabaster-border sticky top-0 z-50 transition-all">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Upper Navigation Row: Search, Centered Logo, Client Utilities -->
+<div class="flex items-center justify-between py-4 gap-6 border-b border-alabaster-border/60">
+<!-- Minimalist Luxury Search -->
+<div class="w-1/4 hidden md:block">
+<div class="relative max-w-xs">
+<input class="w-full bg-alabaster/70 pl-8 pr-3 py-1.5 rounded-full border border-alabaster-border text-xs text-stone-800 placeholder-stone-400 focus:bg-white focus:outline-none focus:border-botanical transition-all" placeholder="Search formulations &amp; actives..." type="text"/>
+<i class="w-3.5 h-3.5 text-stone-400 absolute left-2.5 top-1/2 -translate-y-1/2" data-lucide="search"></i>
+</div>
+</div>
+<!-- Center Brand Logo -->
+<div class="flex justify-center flex-1 md:flex-initial">
+<a class="inline-block transition-opacity hover:opacity-90" href="#">
+<img alt="Siyantra Dermal Botanicals" class="h-9 md:h-11 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WsR8MUGDaCvl3Hto__gEZtjnzFm9ZI9mrv_RtRB5b-tZCHsV5pcg7Nf-YRtl0F246TB3VnUM3B3rF_07FTul3nNZDxzauzGSn7U_ZLXV_RJ3GDDyHjmWE-n6GcRnnbz1WALFeppq3lcLEKkPdMg3zYucxWA9GETObUZNjozTp6Mi_SYg4JWYP08TU7qZJGN2t8q7U4p6jrNrNPGxANH9kmPD1Z_j3UQcnhz5tv47u4RWlwL44cDYe9sQ"/>
+</a>
+</div>
+<!-- Client Utilities -->
+<div class="w-1/4 flex items-center justify-end space-x-5 text-xs font-medium text-stone-700">
+<a class="hidden sm:flex items-center gap-1.5 hover:text-botanical transition-colors" href="#">
+<i class="w-4 h-4 stroke-[1.5]" data-lucide="user"></i>
+<span class="tracking-wider uppercase text-[10px] hidden lg:inline">Concierge</span>
+</a>
+<a class="flex items-center gap-1.5 hover:text-botanical transition-colors" href="#">
+<i class="w-4 h-4 stroke-[1.5]" data-lucide="bookmark"></i>
+<span class="tracking-wider uppercase text-[10px] hidden lg:inline">Curations</span>
+</a>
+<a class="flex items-center gap-2 hover:text-botanical transition-colors" href="#">
+<div class="relative">
+<i class="w-4 h-4 stroke-[1.5]" data-lucide="shopping-bag"></i>
+<span class="absolute -top-1 -right-1.5 bg-botanical text-alabaster rounded-full text-[9px] w-3.5 h-3.5 flex items-center justify-center font-mono">0</span>
+</div>
+<span class="tracking-wider uppercase text-[10px] hidden sm:inline font-mono">£0.00</span>
+</a>
+</div>
+</div>
+<!-- Lower Navigation Links: Editorial Categories -->
+<nav class="py-2.5 overflow-x-auto custom-scrollbar" data-purpose="header-primary-nav">
+<ul class="flex items-center justify-between text-[11px] font-medium tracking-[0.16em] uppercase text-stone-600 whitespace-nowrap min-w-max space-x-7 lg:space-x-9">
+<li><a class="hover:text-botanical transition-colors py-1 inline-block font-semibold text-botanical" href="#">Curated Botanicals</a></li>
+<li><a class="hover:text-botanical transition-colors py-1 inline-block" href="#">Formulations</a></li>
+<li><a class="hover:text-botanical transition-colors py-1 inline-block text-champagne-deep font-semibold" href="#">Bestsellers</a></li>
+<li><a class="hover:text-botanical transition-colors py-1 inline-block" href="#">Cleansers</a></li>
+<li><a class="hover:text-botanical transition-colors py-1 inline-block" href="#">Toners &amp; Essences</a></li>
+<li><a class="hover:text-botanical transition-colors py-1 inline-block" href="#">Hydration &amp; Creams</a></li>
+<li><a class="hover:text-botanical transition-colors py-1 inline-block" href="#">SPF Barrier</a></li>
+<li>
+<a class="text-botanical font-semibold py-1 inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-botanical-tint/60 border border-botanical/15" href="#consultation">
+<i class="w-3 h-3 text-champagne-deep" data-lucide="scan"></i>
+              AI Dermal Diagnostic
+            </a>
+</li>
+<li><a class="hover:text-botanical transition-colors py-1 inline-block" href="#">Hydrogel Masks</a></li>
+<li><a class="hover:text-botanical transition-colors py-1 inline-block text-stone-400" href="#">Archive</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<section class="relative bg-alabaster overflow-hidden border-b border-alabaster-border" data-purpose="hero-ai-skin" id="consultation">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Editorial Copy -->
+<div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-stone-100 border border-stone-200 text-stone-600 text-[10px] tracking-[0.2em] uppercase font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-champagne-ochre"></span>
+            Korean Dermal Science &amp; Botanical Precision
+          </div>
+<div class="space-y-2">
+<h1 class="font-editorial text-4xl sm:text-5xl lg:text-6xl font-normal text-botanical leading-[1.1] tracking-tight">
+              Clinical Botanical Science. <br/>
+<span class="italic font-light text-champagne-deep">Designed For Your Dermal Microbiome.</span>
+</h1>
+</div>
+<p class="text-stone-600 text-sm sm:text-base font-normal leading-relaxed max-w-lg mx-auto lg:mx-0">
+            Harness precision skin-barrier mapping combined with high-grade Seoul herbal chemistry. Analyze cellular moisture density, melanin variance, and lipid integrity in 60 seconds.
+          </p>
+<!-- Dual Luxury CTAs -->
+<div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-botanical hover:bg-botanical-surface text-alabaster text-xs font-semibold tracking-[0.16em] uppercase shadow-sm transition-all" href="#">
+              Start Dermal Consultation
+            </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 rounded-full border border-stone-300 hover:border-botanical bg-white text-stone-800 text-xs font-semibold tracking-[0.16em] uppercase transition-all" href="#">
+              Explore The Archive
+            </a>
+</div>
+<!-- Subtle Clinical Proof Tags -->
+<div class="pt-6 grid grid-cols-3 gap-4 border-t border-alabaster-border/80 max-w-md mx-auto lg:mx-0 text-left">
+<div>
+<div class="font-mono text-xs font-semibold text-botanical">99.4%</div>
+<div class="text-[10px] text-stone-500 uppercase tracking-wider">Barrier Recovery</div>
+</div>
+<div>
+<div class="font-mono text-xs font-semibold text-botanical">100%</div>
+<div class="text-[10px] text-stone-500 uppercase tracking-wider">Certified Provenance</div>
+</div>
+<div>
+<div class="font-mono text-xs font-semibold text-botanical">0.00%</div>
+<div class="text-[10px] text-stone-500 uppercase tracking-wider">Synthetic Additives</div>
+</div>
+</div>
+</div>
+<!-- Right Diagnostic Visual Component -->
+<div class="lg:col-span-6 flex justify-center relative">
+<div class="relative w-full max-w-md lg:max-w-lg p-2">
+<!-- Subtle Radial Gradient Background -->
+<div class="absolute inset-0 bg-gradient-to-tr from-champagne/10 via-transparent to-botanical/5 rounded-3xl -rotate-1"></div>
+<div class="relative bg-white/60 backdrop-blur-sm p-4 rounded-3xl border border-alabaster-border shadow-sm">
+<img alt="Siyantra Facial Dermal Diagnostic Model" class="w-full h-auto object-contain mx-auto mix-blend-multiply" src="https://lh3.googleusercontent.com/aida/AEtjO1XPlXORTkKGoiq8QSvMGL79pQJbY6lWnRzGozbnANJuGOHWFudiETjtV0OSnIDSz0DWviZuCZzWHZB7oxfMGm7Mh1FwOoAdVQHFnL7HXoPi7MuNJXAjEEpMI3zu7BljI0n9FCBLvAnBaGX4lijc8KN95LY4f9gtQacF9sdZD-QGwRfQZRUIVWZntdfrEPX-q9NiTaUk_xQ61v9Pi14KDrQisfHzmP2XAv_TvURJgDSvYNmbR6A-U55OaQ"/>
+<!-- Clean Minimal Diagnostic Badges -->
+<div class="absolute bottom-6 left-6 bg-white/95 border border-alabaster-border rounded-xl px-4 py-2.5 shadow-sm">
+<span class="text-[9px] uppercase tracking-[0.15em] text-champagne-deep font-bold block">Biometric Metric</span>
+<span class="text-xs font-medium text-stone-800 font-mono">Microbiome Density: Optimal (96.8%)</span>
+</div>
+<div class="absolute top-6 right-6 bg-botanical text-alabaster rounded-xl px-3.5 py-2 shadow-sm text-right">
+<span class="text-[9px] uppercase tracking-[0.15em] text-champagne-light font-bold block">Seoul Certified</span>
+<span class="text-[11px] font-mono">Index 04 // Lipidic Guard</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: ValuePropositionBanner -->
+<section class="py-12 bg-white border-b border-alabaster-border text-center" data-purpose="value-prop-banner">
+<div class="max-w-4xl mx-auto px-4 sm:px-6">
+<span class="text-[10px] tracking-[0.25em] uppercase text-champagne-deep font-bold">The Siyantra Standard</span>
+<h2 class="font-editorial text-2xl sm:text-3xl md:text-4xl font-normal text-botanical tracking-tight mt-2">
+        Authentic Dermal Botanicals. <span class="italic">Dispatched With Precision.</span>
+</h2>
+<p class="mt-3 text-xs sm:text-sm text-stone-600 font-normal max-w-xl mx-auto leading-relaxed">
+        Sourced directly from verified laboratories in Seoul and Incheon. Preserved in climate-regulated storage for ultimate bio-potency.
+      </p>
+<div class="mt-6">
+<a class="inline-block px-7 py-3 rounded-full bg-botanical hover:bg-botanical-surface text-alabaster text-[11px] font-semibold tracking-[0.18em] uppercase transition-all shadow-sm" href="#">
+          Discover All Formulations
+        </a>
+</div>
+</div>
+</section>
+<!-- END: ValuePropositionBanner -->
+<!-- BEGIN: CircularCategoryIcons Refactored to Refined Botanical Grid -->
+<section class="py-12 bg-alabaster border-b border-alabaster-border" data-purpose="quick-category-icons">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between mb-8">
+<div>
+<span class="text-[10px] uppercase tracking-[0.2em] text-champagne-deep font-semibold">Curation</span>
+<h3 class="font-editorial text-xl sm:text-2xl text-botanical">Shop by Regimen Phase</h3>
+</div>
+<a class="text-xs uppercase tracking-wider text-botanical hover:underline font-semibold flex items-center gap-1" href="#">
+          Complete Routine <i class="w-3.5 h-3.5" data-lucide="arrow-right"></i>
+</a>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 text-center">
+<!-- Item 1 -->
+<a class="group p-4 bg-white rounded-xl border border-alabaster-border hover:border-botanical transition-all flex flex-col items-center" href="#">
+<div class="w-10 h-10 rounded-full bg-alabaster flex items-center justify-center mb-3 group-hover:bg-botanical-tint/70 transition-colors">
+<i class="w-4 h-4 text-botanical" data-lucide="layers"></i>
+</div>
+<span class="text-[11px] font-semibold uppercase tracking-wider text-stone-800 group-hover:text-botanical">Full Archive</span>
+<span class="text-[9px] text-stone-400 font-mono mt-0.5">84 Items</span>
+</a>
+<!-- Item 2 -->
+<a class="group p-4 bg-white rounded-xl border border-alabaster-border hover:border-botanical transition-all flex flex-col items-center" href="#">
+<div class="w-10 h-10 rounded-full bg-alabaster flex items-center justify-center mb-3 group-hover:bg-botanical-tint/70 transition-colors">
+<i class="w-4 h-4 text-botanical" data-lucide="droplets"></i>
+</div>
+<span class="text-[11px] font-semibold uppercase tracking-wider text-stone-800 group-hover:text-botanical">Cleansers</span>
+<span class="text-[9px] text-stone-400 font-mono mt-0.5">pH 5.5 Balancers</span>
+</a>
+<!-- Item 3 -->
+<a class="group p-4 bg-white rounded-xl border border-alabaster-border hover:border-botanical transition-all flex flex-col items-center" href="#">
+<div class="w-10 h-10 rounded-full bg-alabaster flex items-center justify-center mb-3 group-hover:bg-botanical-tint/70 transition-colors">
+<i class="w-4 h-4 text-botanical" data-lucide="sparkles"></i>
+</div>
+<span class="text-[11px] font-semibold uppercase tracking-wider text-stone-800 group-hover:text-botanical">Essences</span>
+<span class="text-[9px] text-stone-400 font-mono mt-0.5">Active Hydration</span>
+</a>
+<!-- Item 4 -->
+<a class="group p-4 bg-white rounded-xl border border-alabaster-border hover:border-botanical transition-all flex flex-col items-center" href="#">
+<div class="w-10 h-10 rounded-full bg-alabaster flex items-center justify-center mb-3 group-hover:bg-botanical-tint/70 transition-colors">
+<i class="w-4 h-4 text-botanical" data-lucide="shield"></i>
+</div>
+<span class="text-[11px] font-semibold uppercase tracking-wider text-stone-800 group-hover:text-botanical">Creams</span>
+<span class="text-[9px] text-stone-400 font-mono mt-0.5">Lipid Restorative</span>
+</a>
+<!-- Item 5 -->
+<a class="group p-4 bg-white rounded-xl border border-alabaster-border hover:border-botanical transition-all flex flex-col items-center" href="#">
+<div class="w-10 h-10 rounded-full bg-alabaster flex items-center justify-center mb-3 group-hover:bg-botanical-tint/70 transition-colors">
+<i class="w-4 h-4 text-botanical" data-lucide="sun"></i>
+</div>
+<span class="text-[11px] font-semibold uppercase tracking-wider text-stone-800 group-hover:text-botanical">SPF Shield</span>
+<span class="text-[9px] text-stone-400 font-mono mt-0.5">PA++++ Chemical/Mineral</span>
+</a>
+<!-- Item 6 -->
+<a class="group p-4 bg-white rounded-xl border border-alabaster-border hover:border-botanical transition-all flex flex-col items-center" href="#">
+<div class="w-10 h-10 rounded-full bg-alabaster flex items-center justify-center mb-3 group-hover:bg-botanical-tint/70 transition-colors">
+<i class="w-4 h-4 text-botanical" data-lucide="eye"></i>
+</div>
+<span class="text-[11px] font-semibold uppercase tracking-wider text-stone-800 group-hover:text-botanical">Orbital Eye</span>
+<span class="text-[9px] text-stone-400 font-mono mt-0.5">Micro-needling Active</span>
+</a>
+<!-- Item 7 -->
+<a class="group p-4 bg-white rounded-xl border border-alabaster-border hover:border-botanical transition-all flex flex-col items-center" href="#">
+<div class="w-10 h-10 rounded-full bg-alabaster flex items-center justify-center mb-3 group-hover:bg-botanical-tint/70 transition-colors">
+<i class="w-4 h-4 text-botanical" data-lucide="smile"></i>
+</div>
+<span class="text-[11px] font-semibold uppercase tracking-wider text-stone-800 group-hover:text-botanical">Masks</span>
+<span class="text-[9px] text-stone-400 font-mono mt-0.5">Bio-Cellulose</span>
+</a>
+</div>
+</div>
+</section>
+<!-- END: CircularCategoryIcons -->
+<!-- BEGIN: FeaturedBrandSection (Medicube High Performance Masterpiece) -->
+<section class="py-20 bg-white border-b border-alabaster-border" data-purpose="featured-brand-medicube">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+<!-- Left Text: Clinical Botanical Detail -->
+<div class="lg:col-span-5 space-y-6">
+<div class="inline-block px-3 py-1 rounded-full bg-champagne-light text-champagne-ochre text-[10px] uppercase tracking-[0.2em] font-semibold">
+            Featured Masterpiece
+          </div>
+<h2 class="font-editorial text-3xl sm:text-4xl text-botanical font-normal leading-tight">
+            Medicube Deep Vita C Capsule Infusion
+          </h2>
+<div class="space-y-3 text-stone-600 text-sm leading-relaxed font-normal">
+<p>
+              Clinically formulated in Gangnam laboratories to reverse oxidative photo-damage and melanin pooling. Suspended inside micro-capsules within a concentrated 50% Sea Buckthorn water matrix.
+            </p>
+<ul class="space-y-1.5 text-xs text-stone-700 font-mono pt-2">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-champagne"></span>
+                50% Vitamin Water + Stable Vitamin C Derivatives
+              </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-champagne"></span>
+                5% Niacinamide Cellular Transference
+              </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-champagne"></span>
+                Dual-Phase Moisture Emulsion Lock
+              </li>
+</ul>
+</div>
+<div class="pt-2">
+<a class="inline-block px-8 py-3.5 rounded-full bg-botanical hover:bg-botanical-surface text-alabaster text-xs font-semibold tracking-[0.16em] uppercase shadow-sm transition-all" href="#">
+              Acquire Formulation — £42.00
+            </a>
+</div>
+<!-- Refined Directional Controls -->
+<div class="flex items-center space-x-4 pt-4 border-t border-alabaster-border text-stone-400">
+<span class="text-[10px] tracking-widest font-mono text-stone-500">01 / 04 HIGHLIGHTS</span>
+<div class="flex space-x-1">
+<button aria-label="Previous Highlight" class="p-1 hover:text-botanical transition-colors">
+<i class="w-4 h-4" data-lucide="chevron-left"></i>
+</button>
+<button aria-label="Next Highlight" class="p-1 hover:text-botanical transition-colors">
+<i class="w-4 h-4" data-lucide="chevron-right"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Visual: Amber Jar Masterpiece -->
+<div class="lg:col-span-7">
+<div class="relative overflow-hidden rounded-3xl bg-alabaster border border-alabaster-border p-2">
+<img alt="Medicube Deep Vita C Capsule Cream Editorial Presentation" class="w-full h-[420px] sm:h-[480px] object-cover rounded-2xl transform hover:scale-[1.02] transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AEtjO1UREPZ2cZa-nbuhPmuADBpdapTZsN8eG86pWlizUyN44Of9uDEWIfBFA2xhsQU7CaKOtE1Oz8xxy_HyR6CcbMn36368_Brz3T80is3d14Q-LB1voNJkvda736Rarqe-2Hk5N_XdigYrwJh2vGVcjHmSBsK6HjOUYnFk2LKssAtEqcJV9Ue10HUqH3xQPW-ueo9khmakzmHmb9Jpy-0vnUwLexKRCl17wGJW3v5lI1XKfLChym4eiHa6TYY"/>
+<div class="absolute bottom-6 right-6 bg-botanical/90 backdrop-blur-md text-alabaster text-xs px-4 py-2 rounded-lg font-mono">
+              Batch #MD-908 • Certified Fresh Batch
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FeaturedBrandSection -->
+<!-- BEGIN: PromoGridSection (Refined Editorial Split Cards) -->
+<section class="py-16 bg-alabaster border-b border-alabaster-border" data-purpose="promo-banners">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Left Campaign Card: COSRX Advanced Snail 96 -->
+<div class="relative overflow-hidden rounded-3xl bg-[#EFECE1] border border-stone-300/60 p-8 sm:p-10 flex flex-col justify-between min-h-[380px] group">
+<div class="relative z-10 max-w-[62%] space-y-3">
+<span class="text-[10px] uppercase tracking-[0.2em] font-semibold text-champagne-deep">Hydro-Retention Study</span>
+<h3 class="font-editorial text-2xl sm:text-3xl font-normal text-stone-900 leading-snug">
+              The Moisture Surge: COSRX Snail Mucin
+            </h3>
+<p class="text-xs text-stone-600 leading-relaxed">
+              96.3% Snail Secretion Filtrate. Restores compromised moisture barriers while delivering an ethereal, natural glass finish.
+            </p>
+<div class="pt-3">
+<a class="inline-block px-6 py-2.5 rounded-full bg-botanical text-alabaster hover:bg-botanical-surface text-[11px] font-semibold tracking-wider uppercase transition-all shadow-sm" href="#">
+                Examine Active — £24.00
+              </a>
+</div>
+</div>
+<!-- Product Cutout Image -->
+<div class="absolute right-[-15px] bottom-0 w-1/2 h-[95%] flex items-end justify-center pointer-events-none">
+<img alt="COSRX Advanced Snail 96 Mucin Power Essence" class="object-contain h-full transform group-hover:scale-105 transition-transform duration-500 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida/AEtjO1VekNb5nHibUTTlj3PFCBloAAJarrXt2r-HgmopABhvmj1Ppps_x-0bpow48_4a1DMH7wHVjLLAYH2hgCD14JYwsqnfa7iyBEzjB6uL5w6_b1b1J5Rjxnp-ugk6rmDq_kwMPNkE0Z6K5SYd1tIOv1HQgTZvnJUKwc9AMbHmSU2PElKQPjqE7fIdZ6zqJ0Ulm3qBD4wPqqwDHuABqU3HJ-V4nrE63PKoDTxm48LXw23SDtGxh_h-RfJh4A"/>
+</div>
+</div>
+<!-- Right Campaign Card: Targeted Orbital Eye Rejuvenation -->
+<div class="relative overflow-hidden rounded-3xl bg-[#D6D2CA] border border-stone-300/60 p-8 sm:p-10 flex flex-col justify-between min-h-[380px] group">
+<!-- Subtle Formulator Tag instead of neon discount badge -->
+<div class="absolute top-6 right-6 z-20 px-3 py-1 bg-botanical text-alabaster rounded-full text-[9px] uppercase tracking-widest font-mono">
+            Special Formulation
+          </div>
+<div class="relative z-10 max-w-[60%] space-y-3">
+<span class="text-[10px] uppercase tracking-[0.2em] font-semibold text-stone-700">Dermal Needling Tech</span>
+<h3 class="font-editorial text-2xl sm:text-3xl font-normal text-stone-900 leading-snug">
+              Targeted Orbital Rejuvenation
+            </h3>
+<p class="text-xs text-stone-700 leading-relaxed">
+              Spicule micro-delivery technology awakens tired eye contours with concentrated peptide bio-peptides.
+            </p>
+<div class="pt-3">
+<a class="inline-block px-6 py-2.5 rounded-full bg-stone-900 text-alabaster hover:bg-stone-800 text-[11px] font-semibold tracking-wider uppercase transition-all shadow-sm" href="#">
+                Review Regimen — £36.00
+              </a>
+</div>
+</div>
+<!-- Product Cutout Image -->
+<div class="absolute right-2 bottom-0 w-1/2 h-[95%] flex items-end justify-center pointer-events-none">
+<img alt="Lifting Eye Cream Precision Applicator" class="object-contain h-full transform group-hover:scale-105 transition-transform duration-500 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida/AEtjO1WViiE-Ki2rElKPBsJUmju4Sh_oQH7xDjZ1bVzm20p-5O5nMlcNQ_HQu7Ao9cX8WkTz5fPL1WRvW3L1G7ny-oG6B6eWlprfiHZD09fR8UB77910Jbt7iCi9hL7ZgaU9-AuiNwZTTGogV4gbI2I4TmF--eO9D7uTZYhyaC7A4vs--14ym9sGd2F4lUFSvTc5P6x0A-DZO_ZMeFqcyLpoSkFDphHmh9fubUBikqS7E5tAAOsgHY4A_6lLY3M"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: PromoGridSection -->
+<!-- BEGIN: ShopBestsellersSection (Trio Hero Card) -->
+<section class="py-16 bg-white border-b border-alabaster-border" data-purpose="shop-bestsellers-grid">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 pb-4 border-b border-alabaster-border">
+<div>
+<span class="text-[10px] uppercase tracking-[0.2em] text-champagne-deep font-semibold">Consistently Acclaimed</span>
+<h2 class="font-editorial text-3xl font-normal text-botanical">Curated Dermal Bestsellers</h2>
+</div>
+<p class="text-xs text-stone-500 max-w-sm mt-2 sm:mt-0 font-normal">
+          The three foundational formulas most prescribed by Siyantra dermal consultants for daily barrier equilibrium.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Hero Image Presentation -->
+<div class="lg:col-span-6 bg-alabaster rounded-3xl p-6 border border-alabaster-border flex items-center justify-center">
+<img alt="COSRX Dermal Trio Bestsellers" class="max-h-[460px] w-auto object-contain drop-shadow-md rounded-xl" src="https://lh3.googleusercontent.com/aida/AEtjO1Wn7MuYR0H412mXciUwTyDMaPZ9jaEm7TiLA5aTrgT0MpPkoEE0ZEbQBvchRzYRn9YgEKODkEuECPI118PW-agA_ElXb0Uq4Doh5IzO2SnvyH-xMnSdZTQO89zo_k_yAvmZhocesLfySYvAlps3nxf1yNmnL_EeBBHrszpdkNh-aQVDDkaBdk8xW0ugtFPT8N91gMPdPCNoYuDyfWZCxF_VEK-nhpDToiN8s72nItbSIukaQx7vv4CgoyM"/>
+</div>
+<!-- Formulations Breakdown -->
+<div class="lg:col-span-6 space-y-6">
+<div class="border-b border-alabaster-border pb-4">
+<div class="flex items-center justify-between">
+<span class="text-[10px] font-mono uppercase text-champagne-deep font-semibold">Phase 01 // Hydration</span>
+<span class="font-mono text-xs text-stone-800">£24.00</span>
+</div>
+<h4 class="font-editorial text-lg text-stone-900 mt-1">COSRX Advanced Snail 96 Mucin Power Essence</h4>
+<p class="text-xs text-stone-500 mt-1">Enhances cell turnover while soothing irritated, compromised skin surfaces.</p>
+</div>
+<div class="border-b border-alabaster-border pb-4">
+<div class="flex items-center justify-between">
+<span class="text-[10px] font-mono uppercase text-champagne-deep font-semibold">Phase 02 // Brightening</span>
+<span class="font-mono text-xs text-stone-800">£28.00</span>
+</div>
+<h4 class="font-editorial text-lg text-stone-900 mt-1">The Vitamin C 23 Super Serum</h4>
+<p class="text-xs text-stone-500 mt-1">23% pure ascorbic acid stabilized with hyaluronic acid and Tocotrienol.</p>
+</div>
+<div class="border-b border-alabaster-border pb-4">
+<div class="flex items-center justify-between">
+<span class="text-[10px] font-mono uppercase text-champagne-deep font-semibold">Phase 03 // Protection</span>
+<span class="font-mono text-xs text-stone-800">£22.00</span>
+</div>
+<h4 class="font-editorial text-lg text-stone-900 mt-1">Vitamin E Vitalizing Sunscreen SPF 50+</h4>
+<p class="text-xs text-stone-500 mt-1">Antioxidant-infused broad spectrum UV defense with zero chalky residue.</p>
+</div>
+<div class="pt-2 flex flex-col sm:flex-row items-center gap-4">
+<a class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-botanical hover:bg-botanical-surface text-alabaster text-xs font-semibold tracking-[0.16em] uppercase transition-all text-center" href="#">
+              Acquire The Essential Trio — £68.00
+            </a>
+<span class="text-[11px] text-stone-400 font-mono">Complimentary travel vial included</span>
+</div>
+</div>
+</div>
+</div>
+</section><section class="py-20 bg-alabaster border-b border-alabaster-border" data-purpose="prescribed-formulations-grid"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 pb-4 border-b border-alabaster-border"><div><span class="text-[10px] uppercase tracking-[0.25em] text-champagne-deep font-semibold">Clinical Botanical Formulations</span><h2 class="font-editorial text-3xl sm:text-4xl font-normal text-botanical mt-1">Prescribed Botanical Formulations</h2></div><p class="text-xs text-stone-500 max-w-md mt-2 sm:mt-0 font-normal leading-relaxed">Dermal apothecary solutions engineered for cellular restoration and micro-barrier resilience.</p></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"><div class="bg-white rounded-3xl p-5 border border-alabaster-border flex flex-col justify-between group hover:border-botanical transition-all duration-500 shadow-xs"><div class="space-y-4"><div class="relative overflow-hidden rounded-2xl bg-alabaster/60 p-4 flex items-center justify-center"><span class="absolute top-3 left-3 px-2.5 py-1 bg-white/95 rounded-full text-[9px] uppercase tracking-[0.16em] font-mono text-champagne-deep font-semibold border border-alabaster-border z-10">Cellular Restoration</span><img alt="Aura Botanica Restorative Elixir" class="w-full h-64 object-cover rounded-xl group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGtV9PAwMQXGaYjN-3orRw4Qp8np5tMdYMDhfYZzT4CHAHUHKS_jbb9khSrLZs8f9SbHmT7M1kU3lEiq7yZ3MUWMJa1cSAIvPuhVKMrVAHS2edvrJugGLZ76DWVOgBl218bIvNXUESfonIMH0zKvEngR_z3NBHAeLu4k8l1c_eg4vSP63Ku1CdEhQLc3ud7XP_zSiW-vmYtR7x5kcuLOD5hSHKcDgmf1Q1RLnsoEySoDr872CLK2xs"/></div><div class="space-y-1.5 pt-1"><div class="text-[10px] font-mono uppercase tracking-wider text-stone-400">Aura Botanica • 30ml</div><h3 class="font-editorial text-lg text-botanical font-normal leading-snug group-hover:text-champagne-deep transition-colors">Restorative Elixir</h3><p class="text-xs text-stone-500">Golden Green Herbal Serum with cellular renewal bio-lipids.</p></div></div><div class="pt-4 mt-4 border-t border-alabaster-border"><div class="text-[10px] font-mono text-stone-500 mb-3"><span class="font-semibold text-stone-700">Actives:</span> Centella Asiatica + Squalane 12%</div><div class="flex items-center justify-between gap-3"><span class="font-mono text-sm font-semibold text-stone-900">£38.00</span><button class="px-4 py-2 rounded-full bg-botanical hover:bg-botanical-surface text-alabaster text-[10px] font-semibold tracking-[0.16em] uppercase transition-all shadow-sm">Prescribe</button></div></div></div><div class="bg-white rounded-3xl p-5 border border-alabaster-border flex flex-col justify-between group hover:border-botanical transition-all duration-500 shadow-xs"><div class="space-y-4"><div class="relative overflow-hidden rounded-2xl bg-alabaster/60 p-4 flex items-center justify-center"><span class="absolute top-3 left-3 px-2.5 py-1 bg-white/95 rounded-full text-[9px] uppercase tracking-[0.16em] font-mono text-champagne-deep font-semibold border border-alabaster-border z-10">Barrier Matrix</span><img alt="Aristos Botanica Botanical Facial Balm" class="w-full h-64 object-cover rounded-xl group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMHCUimuY55Sq3YjKS2DY3DYj6da2jCFcwTFpLYO83EYC_5EgRKIEDc1rQ8O4GJY6mLkmLJAVvKltHPmDUMmMziLEkitcOae3INZax6sThfC8ohbMwcTQJtDQjc2lRRgZv30Xc8y8dd396ZiihnrGuXqSJHOTEo7NzCijQUklWuYUCyVAzCtdNuGQIoVF6APcuM9y21k2HOadfTUCZyZhzdLXIc2fyW-7BId-ywsZrRVvxQ3zLz7I8"/></div><div class="space-y-1.5 pt-1"><div class="text-[10px] font-mono uppercase tracking-wider text-stone-400">Aristos Botanica • 50ml</div><h3 class="font-editorial text-lg text-botanical font-normal leading-snug group-hover:text-champagne-deep transition-colors">Botanical Facial Balm</h3><p class="text-xs text-stone-500">Deep hydration &amp; lipidic membrane fortification.</p></div></div><div class="pt-4 mt-4 border-t border-alabaster-border"><div class="text-[10px] font-mono text-stone-500 mb-3"><span class="font-semibold text-stone-700">Actives:</span> Frankincense + Rosehip Bio-Lipids</div><div class="flex items-center justify-between gap-3"><span class="font-mono text-sm font-semibold text-stone-900">£46.00</span><button class="px-4 py-2 rounded-full bg-botanical hover:bg-botanical-surface text-alabaster text-[10px] font-semibold tracking-[0.16em] uppercase transition-all shadow-sm">Prescribe</button></div></div></div><div class="bg-white rounded-3xl p-5 border border-alabaster-border flex flex-col justify-between group hover:border-botanical transition-all duration-500 shadow-xs"><div class="space-y-4"><div class="relative overflow-hidden rounded-2xl bg-alabaster/60 p-4 flex items-center justify-center"><span class="absolute top-3 left-3 px-2.5 py-1 bg-white/95 rounded-full text-[9px] uppercase tracking-[0.16em] font-mono text-champagne-deep font-semibold border border-alabaster-border z-10">Mineral Shield</span><img alt="Aurae Hydrating Peptide Sunscreen Lotion" class="w-full h-64 object-cover rounded-xl group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKTWtTfRp6Z-4klxBc0Yly1XLH_2yBAcTh-DCRgWKUZjQ1ZEqszcVSlSx5yQ95sluSSY00dH2Vttau3BhHSgga68zIUcqK3Eu5Ig0ynV5BraKUvvA4l2usIdx5Q2zENMNo66wZdBHlvs7wUke8Fmi3ah0Qlut22errT5g7JIj4iye5bijsLX7_kvqzqWhSQyq3g_dpCrq357qAjIwQhNCCP1VDTu_XSyZyftNUHMuV3Elz2NDX-FVw"/></div><div class="space-y-1.5 pt-1"><div class="text-[10px] font-mono uppercase tracking-wider text-stone-400">Aurae • 50ml</div><h3 class="font-editorial text-lg text-botanical font-normal leading-snug group-hover:text-champagne-deep transition-colors">Hydrating Peptide Sunscreen</h3><p class="text-xs text-stone-500">Broad Spectrum SPF 50+ PA++++ weightless barrier protection.</p></div></div><div class="pt-4 mt-4 border-t border-alabaster-border"><div class="text-[10px] font-mono text-stone-500 mb-3"><span class="font-semibold text-stone-700">Actives:</span> Multi-Peptide Complex + Zinc Shield</div><div class="flex items-center justify-between gap-3"><span class="font-mono text-sm font-semibold text-stone-900">£32.00</span><button class="px-4 py-2 rounded-full bg-botanical hover:bg-botanical-surface text-alabaster text-[10px] font-semibold tracking-[0.16em] uppercase transition-all shadow-sm">Prescribe</button></div></div></div><div class="bg-white rounded-3xl p-5 border border-alabaster-border flex flex-col justify-between group hover:border-botanical transition-all duration-500 shadow-xs"><div class="space-y-4"><div class="relative overflow-hidden rounded-2xl bg-alabaster/60 p-4 flex items-center justify-center"><span class="absolute top-3 left-3 px-2.5 py-1 bg-white/95 rounded-full text-[9px] uppercase tracking-[0.16em] font-mono text-champagne-deep font-semibold border border-alabaster-border z-10">Microbiome Prep</span><img alt="Aura Botanica Luminous Facial Toner" class="w-full h-64 object-cover rounded-xl group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnKYkNVtd4iEA52ssQQkvbyHsaq6Z7Gb1CYp_gOYxm8ELu4rrJ9PyY5T7xZ5vgkiJgCjKjPGSykhVGLZp0v6wsqa8hPDq7hl1LW4Em6c-GJQcbdwHS5kC8e-TlVCP4Egu4n7qgRymow3z6Zb5sqFZh7dYzYssTWfR6UOIo4S1zefRcLA390ZyOgNPIWCCyv5-Dn62C1eX12OLvzbr5o_NLOQu30LPAVjEfxxzBuNPLBy2_kzQNaGKj"/></div><div class="space-y-1.5 pt-1"><div class="text-[10px] font-mono uppercase tracking-wider text-stone-400">Aura Botanica • 100ml</div><h3 class="font-editorial text-lg text-botanical font-normal leading-snug group-hover:text-champagne-deep transition-colors">Luminous Facial Toner</h3><p class="text-xs text-stone-500">Rose &amp; Chamomile botanical infusion calming prep.</p></div></div><div class="pt-4 mt-4 border-t border-alabaster-border"><div class="text-[10px] font-mono text-stone-500 mb-3"><span class="font-semibold text-stone-700">Actives:</span> Fermented Botanical Hydrosol</div><div class="flex items-center justify-between gap-3"><span class="font-mono text-sm font-semibold text-stone-900">£28.00</span><button class="px-4 py-2 rounded-full bg-botanical hover:bg-botanical-surface text-alabaster text-[10px] font-semibold tracking-[0.16em] uppercase transition-all shadow-sm">Prescribe</button></div></div></div></div></div></section>
+<!-- END: ShopBestsellersSection -->
+<!-- BEGIN: ShopByBrandsSection (Refined Museum Editorial Grid) -->
+<section class="py-16 bg-alabaster border-b border-alabaster-border" data-purpose="shop-by-brands">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-left mb-8 flex items-baseline justify-between">
+<div>
+<span class="text-[10px] uppercase tracking-[0.25em] text-champagne-deep font-semibold">Dermal Directory</span>
+<h2 class="font-editorial text-2xl sm:text-3xl text-botanical mt-1">
+            Authorised Botanical Houses
+          </h2>
+</div>
+<span class="text-xs text-stone-400 font-mono">100% Certified Import Provenance</span>
+</div>
+<!-- Architectural Grid of Brands -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 border-t border-l border-alabaster-border bg-white">
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-serif tracking-widest uppercase text-stone-700 group-hover:text-botanical">AXIS-Y</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-medium tracking-wider uppercase text-stone-800 group-hover:text-botanical">SKIN1004</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-sm font-bold uppercase tracking-wider text-stone-900 group-hover:text-botanical">VT CLINICAL</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-semibold uppercase tracking-widest text-stone-800 group-hover:text-botanical">ROUND LAB</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-serif italic text-stone-800 group-hover:text-botanical">d'Alba Piedmont</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-mono font-bold tracking-widest text-stone-900 group-hover:text-botanical">COSRX</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-serif tracking-widest text-stone-800 group-hover:text-botanical">Dr. Althea</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-medium tracking-tight text-stone-800 group-hover:text-botanical">numbuzin</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-serif uppercase tracking-widest text-stone-900 group-hover:text-botanical">SHISEIDO</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-sans tracking-wide text-stone-800 group-hover:text-botanical">Mary &amp; May</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-bold uppercase tracking-wider text-stone-900 group-hover:text-botanical">medicube</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-medium tracking-widest uppercase text-stone-800 group-hover:text-botanical">PURITO SEOUL</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-serif uppercase tracking-widest text-stone-900 group-hover:text-botanical">LANEIGE</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-serif uppercase tracking-widest text-stone-800 group-hover:text-botanical">Arencia</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-semibold uppercase tracking-wider text-stone-800 group-hover:text-botanical">BEAUTY OF JOSEON</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-bold uppercase tracking-wide text-stone-800 group-hover:text-botanical">Abib</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-medium tracking-wide text-stone-800 group-hover:text-botanical">haruharu wonder</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-bold uppercase tracking-widest text-stone-900 group-hover:text-botanical">TIRTIR</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-medium tracking-wider text-stone-800 group-hover:text-botanical">Biodance</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center hover:bg-alabaster transition-colors group" href="#">
+<span class="text-xs font-serif italic text-stone-800 group-hover:text-botanical">Mixsoon</span>
+</a>
+<a class="h-24 border-r border-b border-alabaster-border flex items-center justify-center p-3 text-center bg-alabaster/60 hover:bg-botanical hover:text-alabaster transition-colors group" href="#">
+<span class="text-[10px] font-semibold uppercase tracking-widest group-hover:text-alabaster text-botanical flex items-center gap-1">
+            VIEW ALL 32 <i class="w-3.5 h-3.5" data-lucide="arrow-right"></i>
+</span>
+</a>
+</div>
+</div>
+</section>
+<!-- END: ShopByBrandsSection -->
+<!-- BEGIN: WhySiyantraSection (4 Refined Pillars) -->
+<section class="py-16 bg-white border-b border-alabaster-border" data-purpose="why-siyantra">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="text-[10px] uppercase tracking-[0.25em] text-champagne-deep font-semibold">Integrity &amp; Rigour</span>
+<h2 class="font-editorial text-2xl sm:text-3xl text-botanical mt-1">Why Prescribe Siyantra?</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="p-6 rounded-2xl bg-alabaster border border-alabaster-border space-y-3">
+<div class="w-10 h-10 rounded-full bg-botanical text-alabaster flex items-center justify-center">
+<i class="w-5 h-5 text-champagne" data-lucide="shield-check"></i>
+</div>
+<h4 class="font-semibold text-stone-900 text-sm tracking-wide">Direct Laboratory Provenance</h4>
+<p class="text-xs text-stone-600 leading-relaxed">
+            Zero third-party brokers. Every batch is imported straight from certified manufacturing facilities in Korea under strict batch control.
+          </p>
+</div>
+<div class="p-6 rounded-2xl bg-alabaster border border-alabaster-border space-y-3">
+<div class="w-10 h-10 rounded-full bg-botanical text-alabaster flex items-center justify-center">
+<i class="w-5 h-5 text-champagne" data-lucide="thermometer-snowflake"></i>
+</div>
+<h4 class="font-semibold text-stone-900 text-sm tracking-wide">Climate-Controlled Storage</h4>
+<p class="text-xs text-stone-600 leading-relaxed">
+            Pure botanical extracts degrade in transit. Our UK facilities maintain precise temperature and humidity controls to guarantee bioactivity.
+          </p>
+</div>
+<div class="p-6 rounded-2xl bg-alabaster border border-alabaster-border space-y-3">
+<div class="w-10 h-10 rounded-full bg-botanical text-alabaster flex items-center justify-center">
+<i class="w-5 h-5 text-champagne" data-lucide="flask-conical"></i>
+</div>
+<h4 class="font-semibold text-stone-900 text-sm tracking-wide">Complimentary Dermal Testing</h4>
+<p class="text-xs text-stone-600 leading-relaxed">
+            Each bespoke parcel contains carefully selected sample preparations designed to patch-test your skin barrier before committing.
+          </p>
+</div>
+<div class="p-6 rounded-2xl bg-alabaster border border-alabaster-border space-y-3">
+<div class="w-10 h-10 rounded-full bg-botanical text-alabaster flex items-center justify-center">
+<i class="w-5 h-5 text-champagne" data-lucide="rotate-ccw"></i>
+</div>
+<h4 class="font-semibold text-stone-900 text-sm tracking-wide">30-Day Barrier Guarantee</h4>
+<p class="text-xs text-stone-600 leading-relaxed">
+            If a recommended formulation is not in complete harmony with your dermal barrier, our concierge offers seamless returns within 30 days.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: WhySiyantraSection -->
+<!-- BEGIN: GoogleReviewsSection (Editorial Testimonials) -->
+<section class="py-16 bg-alabaster border-b border-alabaster-border" data-purpose="google-customer-reviews">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Top Summary Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-10 pb-6 border-b border-alabaster-border">
+<div>
+<span class="text-[10px] uppercase tracking-[0.25em] text-champagne-deep font-semibold">Client Clinical Record</span>
+<h3 class="font-editorial text-2xl text-botanical mt-1">Verified Dermal Consultations</h3>
+</div>
+<div class="flex items-center space-x-4">
+<div class="flex items-center space-x-1.5 text-xs text-stone-700">
+<span class="font-mono font-bold text-stone-900">4.9 / 5.0</span>
+<span class="text-champagne font-bold">★★★★★</span>
+<span class="text-stone-500 font-mono">(2,410 Reviews)</span>
+</div>
+<a class="px-4 py-2 rounded-full border border-stone-300 hover:border-botanical text-xs text-stone-800 uppercase tracking-wider font-semibold transition-colors" href="#">
+            Share Experience
+          </a>
+</div>
+</div>
+<!-- Reviews Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Review 1 -->
+<div class="bg-white rounded-2xl p-6 border border-alabaster-border shadow-xs flex flex-col justify-between space-y-5">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-champagne text-xs">★★★★★</span>
+<span class="text-[10px] font-mono text-stone-400">Mayfair Studio Consultation</span>
+</div>
+<p class="font-editorial text-sm text-stone-800 leading-relaxed italic">
+              "The bespoke AI dermal scan was eye-opening. The clinical team mapped my lipid deficiency and recommended a tailored routine of snail mucin and gentle ceramides. My redness was halved in 10 days."
+            </p>
+</div>
+<div class="pt-4 border-t border-alabaster-border flex items-center justify-between text-xs">
+<span class="font-medium text-stone-900">Shahid P.</span>
+<span class="text-stone-400 font-mono text-[10px]">Verified Client • 8 wks ago</span>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-white rounded-2xl p-6 border border-alabaster-border shadow-xs flex flex-col justify-between space-y-5">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-champagne text-xs">★★★★★</span>
+<span class="text-[10px] font-mono text-stone-400">Online Diagnostic Prescription</span>
+</div>
+<p class="font-editorial text-sm text-stone-800 leading-relaxed italic">
+              "Exceptional customer concierge. Siyantra is worlds apart from ordinary K-beauty sites; everything arrives climate-secured in sustainable linen packaging with clear usage timelines."
+            </p>
+</div>
+<div class="pt-4 border-t border-alabaster-border flex items-center justify-between text-xs">
+<span class="font-medium text-stone-900">Hammaad K.</span>
+<span class="text-stone-400 font-mono text-[10px]">Verified Client • 3 wks ago</span>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-white rounded-2xl p-6 border border-alabaster-border shadow-xs flex flex-col justify-between space-y-5">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-champagne text-xs">★★★★★</span>
+<span class="text-[10px] font-mono text-stone-400">Trafford Flagship Studio</span>
+</div>
+<p class="font-editorial text-sm text-stone-800 leading-relaxed italic">
+              "The Medicube Deep Vita C formulation completely cleared my stubborn post-inflammatory hyperpigmentation. Incredibly knowledgeable specialists who never pressure sales."
+            </p>
+</div>
+<div class="pt-4 border-t border-alabaster-border flex items-center justify-between text-xs">
+<span class="font-medium text-stone-900">Eleanor M.</span>
+<span class="text-stone-400 font-mono text-[10px]">Verified Client • 2 wks ago</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: GoogleReviewsSection -->
+<!-- BEGIN: FAQSection (Elevated Editorial Accordion) -->
+<section class="py-20 bg-white border-b border-alabaster-border" data-purpose="faq-accordion-section">
+<div class="max-w-3xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-12">
+<span class="text-[10px] uppercase tracking-[0.25em] text-champagne-deep font-semibold">Clinical Concierge</span>
+<h2 class="font-editorial text-3xl text-botanical mt-1">Frequently Examined Inquiries</h2>
+</div>
+<div class="space-y-3">
+<!-- FAQ 1 -->
+<details class="group border border-alabaster-border rounded-xl overflow-hidden bg-alabaster/40" open="">
+<summary class="flex items-center justify-between px-6 py-4 cursor-pointer font-medium text-sm text-stone-900 hover:bg-alabaster/80 list-none select-none transition-colors">
+<span>What defines Siyantra's clinical botanical standard?</span>
+<i class="faq-chevron w-4 h-4 text-stone-400 transition-transform duration-200" data-lucide="chevron-down"></i>
+</summary>
+<div class="px-6 pb-5 pt-1 text-xs text-stone-600 border-t border-alabaster-border leading-relaxed">
+            All formulations are subjected to strict third-party dermatological patch assessment in Seoul and London. We specifically curate active concentrations of botanical polyphenols, centella asiatica, and bifida ferment lysat that work symbiotically with the natural lipid barrier without causing micro-inflammation.
+          </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group border border-alabaster-border rounded-xl overflow-hidden bg-alabaster/40">
+<summary class="flex items-center justify-between px-6 py-4 cursor-pointer font-medium text-sm text-stone-900 hover:bg-alabaster/80 list-none select-none transition-colors">
+<span>How does the AI Dermal Diagnostic formulate recommendations?</span>
+<i class="faq-chevron w-4 h-4 text-stone-400 transition-transform duration-200" data-lucide="chevron-down"></i>
+</summary>
+<div class="px-6 pb-5 pt-1 text-xs text-stone-600 border-t border-alabaster-border leading-relaxed">
+            Our proprietary algorithm cross-references facial surface hydration, micro-pore congestion patterns, and barrier integrity markers with our botanical database to design a minimal, high-potency regimen customized to your skin profile.
+          </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group border border-alabaster-border rounded-xl overflow-hidden bg-alabaster/40">
+<summary class="flex items-center justify-between px-6 py-4 cursor-pointer font-medium text-sm text-stone-900 hover:bg-alabaster/80 list-none select-none transition-colors">
+<span>Dispatch timelines and international studio delivery?</span>
+<i class="faq-chevron w-4 h-4 text-stone-400 transition-transform duration-200" data-lucide="chevron-down"></i>
+</summary>
+<div class="px-6 pb-5 pt-1 text-xs text-stone-600 border-t border-alabaster-border leading-relaxed">
+            Orders confirmed prior to 15:00 GMT are dispatched same-day via temperature-regulated courier for next-day UK delivery. European clinical transit is concluded within 3 to 4 business days.
+          </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group border border-alabaster-border rounded-xl overflow-hidden bg-alabaster/40">
+<summary class="flex items-center justify-between px-6 py-4 cursor-pointer font-medium text-sm text-stone-900 hover:bg-alabaster/80 list-none select-none transition-colors">
+<span>Can I receive an in-person dermal assessment?</span>
+<i class="faq-chevron w-4 h-4 text-stone-400 transition-transform duration-200" data-lucide="chevron-down"></i>
+</summary>
+<div class="px-6 pb-5 pt-1 text-xs text-stone-600 border-t border-alabaster-border leading-relaxed">
+            Yes. Walk-in appointments and reserved private skin consultations are hosted daily at our flagship studios in London Mayfair and Manchester Trafford Centre, with Edinburgh opening Autumn 2026.
+          </div>
+</details>
+</div>
+</div>
+</section>
+<!-- END: FAQSection -->
+<!-- BEGIN: MainFooter -->
+<footer class="bg-botanical text-alabaster border-t border-botanical-surface pt-16 pb-10 text-xs" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Upper Footer Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-14 border-b border-white/10">
+<!-- Brand Summary -->
+<div class="lg:col-span-2 space-y-4">
+<div class="bg-white/95 p-3 rounded-xl inline-block">
+<img alt="Siyantra Dermal Botanicals" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WsR8MUGDaCvl3Hto__gEZtjnzFm9ZI9mrv_RtRB5b-tZCHsV5pcg7Nf-YRtl0F246TB3VnUM3B3rF_07FTul3nNZDxzauzGSn7U_ZLXV_RJ3GDDyHjmWE-n6GcRnnbz1WALFeppq3lcLEKkPdMg3zYucxWA9GETObUZNjozTp6Mi_SYg4JWYP08TU7qZJGN2t8q7U4p6jrNrNPGxANH9kmPD1Z_j3UQcnhz5tv47u4RWlwL44cDYe9sQ"/>
+</div>
+<p class="text-xs text-alabaster/70 leading-relaxed max-w-sm">
+            Siyantra represents the synthesis of Korean clinical dermatology and time-honoured botanical pharmacology. Formulated for resilient barrier biology.
+          </p>
+<div class="space-y-1 text-stone-400 font-mono text-[11px] pt-2">
+<p>Mayfair Atelier: 28 Curzon Street, London, W1J 7TQ</p>
+<p>Dermal Concierge: concierge@siyantra.com • 0800 080 7037</p>
+</div>
+</div>
+<!-- Navigation: Formulations -->
+<div class="space-y-3">
+<h4 class="font-serif text-sm text-champagne-light uppercase tracking-wider">Formulations</h4>
+<ul class="space-y-2 text-alabaster/70 text-[11px] tracking-wide">
+<li><a class="hover:text-champagne transition-colors" href="#">Microbiome Cleansers</a></li>
+<li><a class="hover:text-champagne transition-colors" href="#">Essences &amp; Toners</a></li>
+<li><a class="hover:text-champagne transition-colors" href="#">Bio-Active Serums</a></li>
+<li><a class="hover:text-champagne transition-colors" href="#">Ceramide Creams</a></li>
+<li><a class="hover:text-champagne transition-colors" href="#">Mineral &amp; Fluid SPF</a></li>
+<li><a class="hover:text-champagne transition-colors" href="#">Hydrogel Bio-Masks</a></li>
+</ul>
+</div>
+<!-- Navigation: Client Concierge -->
+<div class="space-y-3">
+<h4 class="font-serif text-sm text-champagne-light uppercase tracking-wider">Concierge</h4>
+<ul class="space-y-2 text-alabaster/70 text-[11px] tracking-wide">
+<li><a class="hover:text-champagne transition-colors" href="#consultation">AI Dermal Diagnostic</a></li>
+<li><a class="hover:text-champagne transition-colors" href="#">Prescription Tracking</a></li>
+<li><a class="hover:text-champagne transition-colors" href="#">Studio Appointments</a></li>
+<li><a class="hover:text-champagne transition-colors" href="#">30-Day Guarantee Policy</a></li>
+<li><a class="hover:text-champagne transition-colors" href="#">Botanical Ingredient Glossary</a></li>
+<li><a class="hover:text-champagne transition-colors" href="#">Terms of Formulation</a></li>
+</ul>
+</div>
+<!-- Newsletter Subscription -->
+<div class="space-y-3">
+<h4 class="font-serif text-sm text-champagne-light uppercase tracking-wider">The Siyantra Gazette</h4>
+<p class="text-[11px] text-alabaster/70 leading-relaxed">
+            Receive clinical research monographs and seasonal formulation drops directly to your inbox.
+          </p>
+<form action="#" class="space-y-2 pt-1" method="post">
+<input class="w-full bg-botanical-surface px-3 py-2 text-xs rounded-lg border border-botanical-muted/40 text-alabaster placeholder-stone-400 focus:outline-none focus:border-champagne" placeholder="Enter your email address" type="email"/>
+<button class="w-full py-2 bg-champagne hover:bg-champagne-deep text-botanical-dark font-semibold text-xs tracking-wider uppercase rounded-lg transition-colors" type="submit">
+              Subscribe To Dispatch
+            </button>
+</form>
+</div>
+</div>
+<!-- Lower Copyright & Certification Row -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-alabaster/50 font-mono gap-4">
+<p>© 2025 Siyantra Dermal Botanicals Ltd. Certified Authentic Korean Formulation Archive.</p>
+<div class="flex items-center space-x-6 text-[10px] uppercase tracking-wider">
+<a class="hover:underline" href="#">Privacy Protocol</a>
+<a class="hover:underline" href="#">Ethical Sourcing</a>
+<a class="hover:underline" href="#">Dermatological Certifications</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: FloatingWidgets (Refined Luxury Google Rating Pill) -->
+<div class="fixed bottom-5 right-5 z-40 bg-white/95 backdrop-blur-md border border-alabaster-border rounded-xl shadow-lg px-3.5 py-2 flex items-center space-x-3 text-xs" data-purpose="floating-google-badge">
+<div class="w-5 h-5 flex items-center justify-center font-serif font-bold text-botanical border border-botanical/20 rounded-full text-[11px]">
+      S
+    </div>
+<div class="leading-tight">
+<div class="font-semibold text-stone-900 text-[11px]">Siyantra Clinical</div>
+<div class="flex items-center space-x-1 text-[10px]">
+<span class="font-bold text-champagne-deep font-mono">4.9</span>
+<span class="text-champagne">★★★★★</span>
+<span class="text-stone-400 font-mono">(2.4k Verified)</span>
+</div>
+</div>
+</div>
+<!-- END: FloatingWidgets -->
+<!-- Lucide Script Initialization -->
+<script data-purpose="icon-initialization">
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    });
+  </script>
+</body></html>
